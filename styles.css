@@ -10,6 +10,12 @@ h1 {
   text-shadow: 3px 0 #DA0463;
 
 }
+h2 {
+  font-size: 2rem;
+  color: rgb(32, 196, 218);
+  font-family: 'Lilita One', cursive;
+  padding: 2%;
+}
 
 footer {
   color: #DBEDF3;
@@ -45,7 +51,8 @@ footer {
 }
 
 .set {
-  margin: 10% auto;
+  margin-top: 1rem;
+  margin: 5% auto;
 }
 
 .game-over {
@@ -78,4 +85,21 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.play{
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 30px 25px 0px;
+  background-color : rgb(225, 0, 255);
+  border-radius: 10%;
+  padding: 5px 20px 5px;
+
+}
+.play:active{
+  background-color: rgb(230, 133, 242);
+}
+.play-btn{
+  background-color: #1447d3;
 }
