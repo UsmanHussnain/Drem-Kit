@@ -17,6 +17,43 @@ document.addEventListener("keydown" , function(event){
 
 });
 
+// Event listener for Button 1
+document.querySelector(".m-play1").addEventListener("click", function() {
+    makeSoundWithDelay("w",0);
+    
+    makeSoundWithDelay("d", 500);
+   
+    makeSoundWithDelay("j", 1000);
+    
+  });
+  
+  // Event listener for Button 2
+  document.querySelector(".m-play2").addEventListener("click", function() {
+    makeSoundWithDelay("a",0);
+    
+    makeSoundWithDelay("s", 500);
+   
+    makeSoundWithDelay("k", 1000);
+    
+  });
+  
+  // Event listener for Button 3
+  document.querySelector(".m-play3").addEventListener("click", function() {
+    makeSoundWithDelay("w",0);
+    
+    makeSoundWithDelay("s", 500);
+   
+    makeSoundWithDelay("j", 1000);
+    
+    makeSoundWithDelay("l", 1500);
+    
+    makeSoundWithDelay("k", 2000);
+    
+    
+  });
+
+
+
 function makeSound(key){
     switch (key) {
         case "w":
@@ -58,8 +95,15 @@ function makeSound(key){
 function buttonAnimation (currentkey){
     var activeButton = document.querySelector("." + currentkey);
     activeButton.classList.add("pressed");
-
+    
     setTimeout(function(){
         activeButton.classList.remove("pressed");
     }, 100);
+}
+
+function makeSoundWithDelay(key , delay){
+    setTimeout(function() {
+        makeSound(key);
+        buttonAnimation(key);
+      }, delay);
 }
